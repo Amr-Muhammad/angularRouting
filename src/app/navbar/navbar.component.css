@@ -1,0 +1,13 @@
+.backgroundColor{
+    background-color: #2C3E50;
+}
+.active{
+    background-color: #1ABC9C;
+    border: solid 1px;
+    border-radius: 7px;
+    border-color: transparent;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

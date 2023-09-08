@@ -1,0 +1,30 @@
+.backgroundColor {
+    background-color: #1ABC9C;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.test::after {
+    content: '';
+    margin-left: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 4px;
+}
+
+.test::before {
+    content: '';
+    margin-right: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 4px;
+}
