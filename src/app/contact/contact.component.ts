@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  focus(e: Event, id: string) {
+    if (e.target == document.activeElement) {
 
+      $(id).addClass('d-flex').removeClass('d-none').animate({ bottom: '10px' })
+    }
+
+    else {
+      $(id).addClass('d-none').removeClass('d-flex').animate({ bottom: '0px' })
+    }
+  }
 }

@@ -7,11 +7,11 @@ import { ContactComponent } from './contact/contact.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'portofolio', component: PortofolioComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent ,title: 'Home' },
+  { path: 'about', component: AboutComponent,title: 'About' },
+  { path: 'portofolio', component: PortofolioComponent,title: 'Portofolio' },
+  { path: 'contact', component: ContactComponent,title: 'Contact' },
   { path: '**', component: NotfoundComponent },
 ];
 

@@ -37,4 +37,10 @@ i {
     transition: all 0.5s;
     opacity: 0;
     background-color: #29B197;
+    cursor: pointer;
 }
+
+.modal {
+    --bs-modal-width: 30%
+}
+

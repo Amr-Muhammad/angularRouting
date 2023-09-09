@@ -33,7 +33,9 @@ input{
     border: none;
     border-bottom: solid 1px rgb(216, 215, 215);
     border-radius: 5px;
+    padding-left: 10px;
 }
+
 button{
     background-color: #1ABC9C;
     color: white;
@@ -41,4 +43,8 @@ button{
 
 ::placeholder{
     font-size: 16px;
+}
+
+input:focus {
+    outline: none;
 }

@@ -7,13 +7,24 @@
     </div>
 
     <div class="my-5 text-center d-flex justify-content-center ">
+
         <form action="" class="d-flex flex-column w-75">
-            <input type="text" name="" placeholder="userName" class="mb-5 pb-3">
-            <input type="number" name="" placeholder="userAge" class="mb-5 pb-3">
-            <input type="email" name="" placeholder="userEmail" class="mb-5 pb-3">
-            <input type="password" name="" placeholder="userPassword" class="mb-3 pb-3">
+            <label id="userName" class="position-relative px-2 text-success flex-start d-none" for="">userName :</label>
+            <input id="test" (blur)="focus($event,'#userName')" (focus)="focus($event,'#userName')" type="text" name=""
+                placeholder="userName" class="mb-5 pb-3">
+
+            <label id="userAge" class="position-relative px-2 text-success flex-start d-none" for="">userAge :</label>
+            <input (blur)="focus($event,'#userAge')" (focus)="focus($event,'#userAge')" type="number" name="" placeholder="userAge" class="mb-5 pb-3">
+
+            <label id="userEmail" class="position-relative px-2 text-success flex-start d-none" for="">userEmail :</label>
+            <input (blur)="focus($event,'#userEmail')" (focus)="focus($event,'#userEmail')" type="email" name="" placeholder="userEmail" class="mb-5 pb-3">
+
+            <label id="userPassword" class="position-relative px-2 text-success flex-start d-none" for="">userPassword :</label>
+            <input (blur)="focus($event,'#userPassword')" (focus)="focus($event,'#userPassword')" type="password" name="" placeholder="userPassword" class="mb-3 pb-3">
+
             <button type="button" class="btn me-auto">Send Message</button>
         </form>
+
     </div>
     <div class="py-5"></div>
     <div class="py-5"></div>
